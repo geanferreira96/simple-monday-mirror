@@ -1,46 +1,78 @@
-Política de Privacidade – Simple Monday
-Última atualização: 22 de junho de 2026
+# Política de Privacidade – Simple Monday
 
-A sua privacidade é de extrema importância para nós. Esta Política de Privacidade descreve como o aplicativo Simple Monday coleta, usa, armazena e protege as suas informações.
+**Última atualização:** 22 de junho de 2026
+
+A sua privacidade é de extrema importância para nós. Esta Política de Privacidade descreve como o aplicativo **Simple Monday** coleta, usa, armazena e protege as suas informações.
 
 O Simple Monday foi desenvolvido como um aplicativo utilitário local para consolidação de produtividade, permitindo a sincronização de tarefas do Monday.com e registros de ponto do Carol Clock In (Carol.ai) e TOTVS Meu RH.
 
-1. Coleta e Uso de Informações
+---
+
+## 1. Coleta e Uso de Informações
+
 Para fornecer as funcionalidades de sincronização e exibição unificada de informações, o aplicativo requer que você forneça certas informações de acesso:
 
-Credenciais de Acesso: Usuário, senha e/ou URLs de conexão para os serviços Carol Clock In e TOTVS Meu RH.
-Tokens de API: Token de acesso para integração com o Monday.com.
-Dados de Produtividade e Ponto: Registros de batidas de ponto, saldo de horas (extras e atrasos), tarefas e status de projetos vinculados às suas contas.
-2. Como os Dados São Processados (Sem Servidores Intermediários)
+- **Credenciais de Acesso:** Usuário, senha e/ou URLs de conexão para os serviços Carol Clock In e TOTVS Meu RH.
+- **Tokens de API:** Token de acesso para integração com o Monday.com.
+- **Dados de Produtividade e Ponto:** Registros de batidas de ponto, saldo de horas (extras e atrasos), tarefas e status de projetos vinculados às suas contas.
+
+---
+
+## 2. Como os Dados São Processados (Sem Servidores Intermediários)
+
 O Simple Monday preza pela máxima segurança da informação e adota uma arquitetura descentralizada:
 
-Comunicação Direta: Toda a comunicação de rede é realizada diretamente entre o seu dispositivo e os servidores oficiais dos serviços terceiros (Monday.com, Carol.ai e TOTVS).
-Ausência de Servidor Central: Não possuímos servidores intermediários. Seus dados de login, senhas e informações de ponto nunca são transmitidos para nós ou para qualquer outro servidor externo que não sejam as APIs oficiais mencionadas.
-3. Armazenamento Seguro dos Dados
+- **Comunicação Direta:** Toda a comunicação de rede é realizada diretamente entre o seu dispositivo e os servidores oficiais dos serviços terceiros (Monday.com, Carol.ai e TOTVS).
+- **Ausência de Servidor Central:** Não possuímos servidores intermediários. Seus dados de login, senhas e informações de ponto nunca são transmitidos para nós ou para qualquer outro servidor externo que não sejam as APIs oficiais mencionadas.
+
+---
+
+## 3. Armazenamento Seguro dos Dados
+
 A segurança no armazenamento local é tratada com alta prioridade:
 
-Armazenamento de Credenciais: Suas senhas, tokens de API e chaves confidenciais de login são criptografados e salvos no armazenamento seguro nativo do seu sistema operacional (como Android Keystore, iOS Keychain ou equivalentes no Windows/macOS/Linux) através de bibliotecas de armazenamento seguro (flet_secure_storage).
-Cache Local: Seus dados sincronizados (histórico de ponto, tarefas e métricas) são salvos temporariamente em um banco de dados SQLite local (simple_monday.db) no diretório privado do aplicativo. Isso garante que o app funcione offline ou carregue mais rapidamente.
-4. Controle e Exclusão de Dados
-Como os dados são armazenados localmente no seu dispositivo, você possui controle absoluto sobre eles:
+- **Armazenamento de Credenciais:** Suas senhas, tokens de API e chaves confidenciais de login são criptografados e salvos no armazenamento seguro nativo do seu sistema operacional (Android Keystore, iOS Keychain ou equivalentes) via bibliotecas de armazenamento seguro (`flet_secure_storage`).
+- **Cache Local:** Seus dados sincronizados (histórico de ponto, tarefas e métricas) são salvos localmente em um banco de dados SQLite (`simple_monday.db`) no diretório privado do aplicativo.
 
-Limpeza de Cache e Logout: Você pode desconectar suas contas e limpar todos os dados salvos localmente a qualquer momento através do menu de Configurações do aplicativo.
-Desinstalação: Ao desinstalar o aplicativo, o banco de dados local (simple_monday.db) e todas as chaves salvas no armazenamento seguro serão removidos permanentemente pelo sistema operacional do seu dispositivo.
-5. Segurança
-Implementamos medidas técnicas para proteger as suas informações contra acessos não autorizados:
+---
 
-Todas as requisições externas utilizam conexões seguras criptografadas por protocolo HTTPS.
-Utilização de boas práticas de segurança recomendadas pelo ecossistema Flet/Flutter.
-6. Serviços de Terceiros
-Ao utilizar este aplicativo para se conectar a serviços externos, você também estará sujeito às políticas de privacidade de cada plataforma:
+## 4. Controle e Exclusão de Dados
 
-Monday.com: Política de Privacidade da Monday.com
-Carol (Carol.ai / Carol Org Solinftec): Consulte as diretrizes de privacidade internas fornecidas pela Solinftec/Carol.
-TOTVS Meu RH: Consulte as diretrizes da TOTVS e da sua empresa relativas ao uso do Portal do Colaborador.
-7. Alterações Nesta Política de Privacidade
-Podemos atualizar nossa Política de Privacidade de tempos em tempos. Recomendamos que você revise esta página periodicamente para verificar quaisquer alterações. As alterações nesta política entram em vigor imediatamente após serem disponibilizadas no aplicativo.
+Como os dados são armazenados localmente no seu dispositivo, você possui controle total:
 
-8. Contato
-Se você tiver alguma dúvida ou sugestão sobre esta Política de Privacidade, entre em contato:
+- **Limpeza de Cache e Logout:** Você pode desconectar suas contas e limpar todos os dados locais a qualquer momento pelo menu de configurações.
+- **Desinstalação:** Ao desinstalar o aplicativo, o banco de dados local e dados de armazenamento seguro são removidos pelo sistema operacional.
 
-E-mail de suporte: gean.marcos96@gmail.com
+---
+
+## 5. Segurança
+
+Implementamos medidas técnicas para proteger suas informações:
+
+- Todas as requisições utilizam conexões seguras (HTTPS).
+- Uso de boas práticas de segurança recomendadas pelo ecossistema Flutter/Flet.
+
+---
+
+## 6. Serviços de Terceiros
+
+Ao utilizar o aplicativo, você também estará sujeito às políticas de privacidade dos serviços externos:
+
+- Monday.com
+- Carol.ai (Solinftec / Carol Org)
+- TOTVS Meu RH
+
+Recomendamos consultar diretamente as políticas de cada plataforma.
+
+---
+
+## 7. Alterações nesta Política
+
+Podemos atualizar esta Política de Privacidade periodicamente. Recomendamos revisar esta página regularmente. As alterações entram em vigor imediatamente após publicação.
+
+---
+
+## 8. Contato
+
+Se tiver dúvidas ou sugestões:
+gean.marcos96@gmail.com
